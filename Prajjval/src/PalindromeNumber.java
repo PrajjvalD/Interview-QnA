@@ -11,13 +11,14 @@ public class PalindromeNumber {
 		System.out.print("Enter Palindrome String: ");
 		String n = scanner.nextLine();
 		
-//		for (int i=0;i<n.length();i++) {
-//			char c = n.charAt(i);
-//			System.out.println(c);
-//		}
-//		
+		// String traverse
+		// for (int i=0;i<n.length();i++) {
+		//	char c = n.charAt(i);
+		//	System.out.println(c);
+		// }
+				
 		StringBuilder sb=new StringBuilder(n);  
-	    sb.reverse();  
+	        sb.reverse();  
 		if (n.equalsIgnoreCase(sb.toString())) {
 			System.out.println("it is a palindrome number");
 		}else {
